@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #117da8be;
+  --main-bg-color: #1e159c;
+  --pale-green: #0ba80b;
+  --pale-yellow: #d8ba12bd;
+  --chip-bg-color: #bdbdbd;
+  --mark-background: #fff09b;
+  --body-bg: #f3efe875;
+  --custom-shadow: 0 10px 20px 0 rgb(108 135 135 / 20%);
+  --text-color: #284969;
+  --dark-grey: #495057;
+  --heading-color: #343a40;
+  --navbar-outline-color: #42b17dcb;
+}
+
