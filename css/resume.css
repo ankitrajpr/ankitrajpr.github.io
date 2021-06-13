@@ -183,6 +183,9 @@ p.lead {
 .dev-icons .list-inline-item i:hover {
   color: var(--primary-color);
 }
+.btn{
+  background-color: #7d858a21;
+}
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
