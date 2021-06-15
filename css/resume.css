@@ -187,6 +187,24 @@ p.lead {
   background-color: #7d858a21;
 }
 
+.btn-success {
+    color: #fff;
+    background-color: #214a97bd !important;
+    border-color: #1922729f !important;
+}
+
+.btn-success:hover, .btn-success:active:focus,  .btn-success:focus, .btn-success:active, .btn-success.active, .open>.dropdown-toggle.btn-success{
+    color: #fff;
+    background-color: #17369bbd !important;
+    border-color: #185183c9 !important; 
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
