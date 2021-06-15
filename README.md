@@ -11,7 +11,7 @@ Built using:
 [Bootstrap](http://getbootstrap.com/) for CSS  
 [jQuery](https://jquery.com/) for JS 
 [GitHub Pages](https://pages.github.com/) for hosting  
-[VisualStudioCode](https://code.visualstudio.com/) for the effort less code edit :edit:  
+[VisualStudioCode](https://code.visualstudio.com/) for the effort less code edit  
 [git](https://git-scm.com/) for source control
 
 Based on the
