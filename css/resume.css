@@ -549,8 +549,8 @@ a:active {
   bottom: 0px;
   right: 0px;
   overflow: visible;
-  z-index: 9;
-  opacity: 0.4 !important;
+  z-index: 2;
+  opacity: 0.5 !important;
 }
 
 #person-1,
