@@ -76,7 +76,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav" data-aos="fade-up">
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#about">Summary</a>
                 </li>
@@ -133,12 +133,12 @@
                         <li>Post Graduate Diploma in
                             <mark>Advance Computing (CDAC).</mark>
                         </li>
-                        <li>
+                        <li>IT Professional with
                             <span id="yearsExperience" data-aos="flip-right">{exp_in_year}</span>
                             years and
                             <span id="monthsExperience" data-aos="flip-right">{exp_in_months}</span>
                             months of experience in
-                            <mark>Software Industry.</mark>
+                            <mark>Software Development.</mark>
                         </li>
                         <li>Software Developer with experience in
                             <mark>Java(SE & EE), Spring, Boot, Hibernate, Database, JavaScript and OSS Domain.</mark>
@@ -356,18 +356,18 @@
         </section>
 
         <hr class="m-0">
-        
+
         <section class="resume-section p-13 p-lg-5 d-flex align-items-lg-end" id="interests">
             <div class="w-100">
                 <h2 class="mb-5 " data-aos="fade-down">
                     <span class="section-heading">About Me</span>
                 </h2>
-        
+
                 <p class="lead text-justify" data-aos="fade-right">
                     A Java developer who has got traits to be a Full stack developer. Loves building tools, design,
                     photography and reading on whatNot!<br>
                 </p>
-        
+
                 <div id="slides">
                     <div class="overlay"></div>
                     <div class="slides-container">
@@ -376,14 +376,14 @@
                         <img src="img/slide3.jpg" alt="">
                         <img src="img/slide4.jpg" alt="">
                     </div>
-        
+
                     <div class="titleMessage">
                         <div class="heading">
                             <p class="main">ANKIT RAJ PRASAD</p>
                             <p class="sub typed"></p>
                         </div>
                     </div>
-        
+
                     <nav class="slides-navigation">
                         <a href="#" class="next"></a>
                         <a href="#" class="prev"></a>
@@ -419,8 +419,19 @@
                             <li>Control and measure the impact of program change implemented applications and
                                 <mark>maintain
                                     the code release history</mark>against
-                                each change in the application by using <mark>version control system.</mark></li>
-                            <li>Analyse, plan, design, develop and debug complex components using <mark>Java, Spring ( MVC / Boot ), Angular*, JavaScript*, HTML, CSS, SQL queries for Telstra B2C</mark>
+                                each change in the application by using <mark>version control system.</mark>
+                            </li>
+                            <li>Actively participate and contribute to product <mark>architectural design</mark> and
+                                analysis.</li>
+                            <li>Analyzed microservices logs via using <mark>ELK Stack</mark> - Elasticsearch, Logstash,
+                                and Kibana.</li>
+                            <li>Used <mark>Kubernetes</mark> for deploying, managing, and scaling Docker containers.
+                            </li>
+                            <li>Worked with <mark>Git</mark> for code management, code reviews, and deployment by our
+                                integrated CI/CD pipeline.
+                            </li>
+                            <li>Analyse, plan, design, develop and debug complex components using <mark>Java, Spring (
+                                    MVC / Boot ), Angular*, JavaScript*, HTML, CSS, SQL queries for Telstra B2C</mark>
                                 by following company specific coding standards, system design and requirements.</li>
 
                         </ul>
@@ -457,7 +468,8 @@
 
                 <div class="resume-item d-flex flex-column flex-md-row mb-5" data-aos="fade-right">
                     <div class="resume-content mr-auto">
-                        <img src="img/amdocs-2019-lgbtq-logomark-lockup-white-text.svg" style="max-width: 10rem; margin-bottom:0.5rem;">
+                        <img src="img/amdocs-2019-lgbtq-logomark-lockup-white-text.svg"
+                            style="max-width: 10rem; margin-bottom:0.5rem;">
                         <h3 class="mb-0">Software Developer</h3>
                         <p>
                         <ul>
@@ -499,7 +511,7 @@
                             </li>
                             <li>
                                 Deliver <mark>User Stories</mark>based on <mark>low-level design</mark>proposed in
-                                <mark>agile</mark> based environment for <mark>Microservices driven architecture.</mark>
+                                <mark>Agile</mark> based environment for <mark>Microservices driven architecture.</mark>
                             </li>
 
                         </ul>
@@ -519,46 +531,103 @@
                 <h2 class="mb-5 " data-aos="fade-down">
                     <span class="section-heading">Projects</span>
                 </h2>
-                <div class="experience-item" data-aos="fade-right">
-                    <div class="resume-item d-flex flex-column justify-content-between flex-md-row mb-2">
-                        <h3 class="mb-0">Leave Management System
-                          <!--   <a href="https://github.com/ankitrajpr/Leave_Management_System" class="badge badge-light "
-                                target="_blank">
-                                <span><i class="fas fa-external-link-square-alt"></i></span>
-                            </a> -->
-                            <a class="badge badge-light" target="blank" href="https://github.com/ankitrajpr/Leave_Management_System">
-                                <button text="GitHub" class="btn btn-git"><i class="fab fa-github pr-3"></i> Github</button>
-                            </a>
-                        </h3>
-                        <div class="resume-date text-md-right" data-aos="fade-up">
-                            <span class="resume-date-box text-primary">Jan 2019 - Feb 2019</span>
+
+                <div class="card-deck mb-2">
+                    <div class="card" data-aos="fade-up">
+                        <div class="card-header bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h4 class="card-title mb-0">Remediation Tool Utility</h4>
+                                </div>
+                                <div class="col-4" style="text-align: end;">
+                                    <div class="resume-date text-md-right">
+                                        <span class="resume-date-box text-primary">Apr 2021</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="resume-content mr-auto">
+                                <ul>
+                                    <li>Created a script to
+                                        <mark>automate deploy and start Spring Boot Based Application</mark> which is
+                                        required to remediate the technical impediment of Production Issues which also
+                                        avoid human errors.
+                                    </li>
+                                    <li>Allows users to
+                                        <mark>remediate recurring manual impediments by configuring Quartz based Cron
+                                            Job Scheduler to resolve issues</mark>
+                                        at once.
+                                    </li>
+                                    <li>
+                                        Team Member responsible to create application which is developed in <mark>SpringBoot</mark>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="project-tech-stack">
+                                <span class="badge badge-light">Stack:</span>
+                                <span class="chip chip-border-primary">Shell Script</span>
+                                <span class="chip chip-border-primary">Spring Boot</span>
+                                <span class="chip chip-border-primary">ThymeLeaf</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="resume-content mr-auto mb-5">
-                        <ul>
+                <!-- </div> -->
 
-                            <li>Developed a web application to <mark>manage leaves</mark> of employee having simple user
-                                interface.</li>
-                            <li><mark>Role based operations</mark> are permitted for user.</li>
-                            <li>Backend is developed using Java, SpringBoot. </li>
-                            <li>Frontend is developed using HTML, CSS/bootstrap and JSP. </li>
-                            <li>REST API's are exposed for managing leave lifecycle. </li>
+                <!-- <div class="card-deck mb-2"> -->
+                    <div class="card" data-aos="fade-up">
+                        <div class="card-header bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h4 class="card-title mb-0">Leave Management System
+                                        <!--   <a href="https://github.com/ankitrajpr/Leave_Management_System" class="badge badge-light "
+                                                                                        target="_blank">
+                                                                                        <span><i class="fas fa-external-link-square-alt"></i></span>
+                                                                                    </a> -->
+                                        <a class="badge badge-light" target="blank"
+                                            href="https://github.com/ankitrajpr/Leave_Management_System">
+                                            <button text="GitHub" class="btn btn-git"><i class="fab fa-github pr-3"></i>
+                                                Github</button>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="col-4" style="text-align: end;">
+                                    <div class="resume-date text-md-right">
+                                        <span class="resume-date-box text-primary">Feb 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="resume-content mr-auto">
+                                <ul>
 
-                            <div class="project-tech-stack" data-aos="fade-up">
-                                <span class="badge badge-light">Stack:</span>
+                                    <li>Created a web application to <mark>manage leaves</mark> of employee having
+                                        simple user interface.</li>
+                                    <li><mark>Role based operations</mark> are permitted for user.</li>
+                                    <li>Backend is developed using Java, SpringBoot, Spring Data Couchbase </li>
+                                    <li>Frontend is developed using HTML, CSS/bootstrap and JSP. </li>
+                                    <li>REST API's are exposed for managing leave lifecycle. </li>
+                                </ul>
+                                <!-- <small class="badge badge-sm badge-success">Personal Project</small> -->
+
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <div class="project-tech-stack">
+                                <span class="badge badge-light ">Stack:</span>
                                 <span class="chip chip-border-primary">JSP</span>
-                                <span class="chip chip-border-primary">Java</span>
                                 <span class="chip chip-border-primary">Spring Boot</span>
                                 <span class="chip chip-border-primary">REST</span>
                                 <span class="chip chip-border-primary">Couchbase</span>
-
                             </div>
-
-
-                        </ul>
-
+                        </div>
                     </div>
                 </div>
+
 
 
             </div>
@@ -592,13 +661,11 @@
                 <div class="resume-item d-flex flex-column flex-md-row" data-aos="fade-right">
                     <div class="resume-content mr-auto">
                         <h3 class="mb-0">Bachelor of Technology</h3>
-                        <p>Apex Institute of Technology & Management, Bhubaneswar, Orissa, India.
-                            <br>
-                            (<mark>Electronics & Communication Engineering</mark>)
+                        <p>Apex Institute of Technology & Management, Bhubaneswar, Orissa, India.</p>
+
+                        <p><b>Stream:</b> Electronics & Communication Engineering<br>
+                            <b>Grade:</b> First Class
                         </p>
-
-
-                        <p><b>Grade</b> : First Class</p>
                     </div>
                     <div class="resume-date text-md-right" data-aos="fade-up">
                         <span class="resume-date-box text-primary">Oct 2014</span>
@@ -824,9 +891,7 @@
 
                 <div class="row justify-content-md-center">
                     <div class="card-deck" style="margin-top:1rem;">
-                        <div data-aos="fade-right" class="custom-card-style card mobile-fit-cert"
-                            data-target="#certificate_modal" data-toggle="modal"
-                            onclick="populatedata('img/certificates/ProblemSolving.png', 'https://www.hackerrank.com/certificates/c940b796c6d0')">
+                        <div data-aos="fade-right" class="custom-card-style card mobile-fit-cert">
 
                             <div class="row no-gutters custom-border-top">
                                 <div class="col-md-4">
@@ -841,14 +906,19 @@
                                     <div class="card-body d-flex flex-column">
                                         <h4 class="card-title ">Problem Solving (Basic)</h4>
                                         <span>September 2020</span>
+
+                                        <button type="button" class="btn btn-sm btn-outline-secondary certificate-btn"
+                                            id="cert-hackerrank-java" data-target="#certificate_modal"
+                                            data-toggle="modal"
+                                            onclick="populatedata('img/certificates/ProblemSolving.png', 'https://www.hackerrank.com/certificates/c940b796c6d0')">
+                                            <i id="cert-hackerrank-java" class="fas fa-external-link-square-alt"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div data-aos="fade-right" class="custom-card-style card mobile-fit-cert"
-                            data-target="#certificate_modal" data-toggle="modal"
-                            onclick="populatedata('img/certificates/Java_Basic.png', 'https://www.hackerrank.com/certificates/216d2993b65d')">
+                        <div data-aos="fade-right" class="custom-card-style card mobile-fit-cert">
 
                             <div class="row no-gutters custom-border-top">
                                 <div class="col-md-4">
@@ -863,6 +933,13 @@
                                     <div class="card-body d-flex flex-column">
                                         <h4 class="card-title ">Java (Basic)</h4>
                                         <span>June 2020</span>
+
+                                        <button type="button" class="btn btn-sm btn-outline-secondary certificate-btn"
+                                            id="cert-great-learning-java" data-target="#certificate_modal"
+                                            data-toggle="modal"
+                                            onclick="populatedata('img/certificates/Java_Basic.png', 'https://www.hackerrank.com/certificates/216d2993b65d')">
+                                            <i id="ccert-hackerrank-java" class="fas fa-external-link-square-alt"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
