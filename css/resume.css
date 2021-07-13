@@ -735,7 +735,7 @@ a:active {
   border-bottom-right-radius: 10px;
   border-top-left-radius: 10px;
   display: inline-block;
-  background-color: #f8f9fa;
+  background-color: #a3bfda;
   color: var(--dark-grey);
   margin-right: 1rem;
   transition: all 0.3s;
