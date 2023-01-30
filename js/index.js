@@ -46,7 +46,9 @@ function renderLastUpdatedTime() {
     .then(res => res.json())
     .then(res => {
       const lastCommitDate = moment(res[0].commit.committer.date).format("dddd, MMM Do, YYYY");
+      console.log("lastCommitDate :: "+lastCommitDate);
       const timeFromNow = moment(res[0].commit.committer.date).fromNow();
+      console.log("last-update-time :: " + timeFromNow);
       document.getElementById('last-update-time').innerHTML = "Updated " + timeFromNow;
     });
 }
