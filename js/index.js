@@ -41,9 +41,22 @@ function populatedata(imgSrc, certUrl){
   }
 
 
+function renderLastUpdatedTime() {
+  fetch('https://api.github.com/repos/ankitrajpr/ankitrajpr.github.io/commits?per_page=1')
+    .then(res => res.json())
+    .then(res => {
+      const lastCommitDate = moment(res[0].commit.committer.date).format("dddd, MMM Do, YYYY");
+      const timeFromNow = moment(res[0].commit.committer.date).fromNow();
+      document.getElementById('last-update-time').innerHTML = "Updated " + timeFromNow;
+    });
+}
+
+
+
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip();
+    renderLastUpdatedTime();
     document.getElementById("yearsExperience").innerHTML = printYear();
     document.getElementById("monthsExperience").innerHTML = printMonth();
 
